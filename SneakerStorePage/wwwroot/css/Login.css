@@ -8,7 +8,7 @@ body {
     background: #fff;    
 }
 
-main {
+.container-login, .container-forgout-password {
     display: flex;
     height: 100vh;
 }
@@ -28,9 +28,10 @@ main {
 .form-login {
     width: 100%;
     background: #E4E4E4;
-    border-radius: 10px;    
+    border-radius: 10px;
     padding: 5rem;
-    text-align: center
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .img-logo {
@@ -85,7 +86,6 @@ main {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
-    background: red;
     border-radius: 5px;
 }
 
@@ -103,4 +103,56 @@ main {
 
 .btn-login:hover {
     opacity: 85%;
+    transform: translateX(5%);
+}
+
+.back-forgout {
+    background: #fff;
+    width: 60%;
+    padding: 10rem;
+}
+
+.header-forgout {
+    display: flex;
+}
+
+.header-forgout span {
+    width: 0.5vw;
+    padding: 2px;
+    background: #433F43;
+    margin-right: 0.5rem;
+}
+
+.title-forget {
+    font: bold 3rem 'Roboto', sans-serif;
+    color: #000;
+}
+
+.container.text-forget-passsword {
+    margin-top: 6rem;
+}
+
+.text-forget-passsword {
+    font: bold 2rem 'Roboto', sans-serif;
+    color: #4F494B;
+}
+
+container.emoji-forget-password{
+    display: flex;
+    align-items: center;
+}
+
+.emoji-forget-password {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.container.link-login {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.link-back-login {
+    font: bold 1.5rem 'Roboto', sans-serif;
+    color: #F82F40;
 }
