@@ -8,5 +8,11 @@ namespace SneakerStorePage.Controllers
         {
             return View();
         }
+
+        public IActionResult EsqueceuSenha()
+        {
+            return View();
+        }
+
     }
 }
