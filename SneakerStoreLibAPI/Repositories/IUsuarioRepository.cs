@@ -1,9 +1,11 @@
-﻿using SneakerStoreLibAPI.Data;
+﻿using SneakerStoreAPI.Data;
 
-namespace SneakerStoreLibAPI.Repositories
+namespace SneakerStoreAPI.Repositories
 {
     public interface IUsuarioRepository
     {
+        /*
+         * Implementar**
         //Listar Usuarios
         Task<List<Usuario>> GetUsuariosAsync();
 
@@ -18,5 +20,6 @@ namespace SneakerStoreLibAPI.Repositories
         //Deleta Usuário passando id
         Task<int> DeleteAsync(int id);
 
+        */
     }
 }

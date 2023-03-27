@@ -1,10 +1,12 @@
 ﻿using Microsoft.Data.SqlClient;
 using System.Data;
 
-namespace SneakerStoreLibAPI.Data
+namespace SneakerStoreAPI.Data
 {
+  
     public class DbSession : IDisposable
     {
+
         //Gerencia a conexão
         public IDbConnection Connection { get; }
 
@@ -21,4 +23,6 @@ namespace SneakerStoreLibAPI.Data
         //Fecha a conexão
         public void Dispose() => Connection?.Dispose();
     }
+
+
 }

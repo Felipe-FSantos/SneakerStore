@@ -1,7 +1,8 @@
 ﻿using Dapper;
-using SneakerStoreLibAPI.Data;
+using SneakerStoreAPI.Data;
+using SneakerStoreLib.Entidades;
 
-namespace SneakerStoreLibAPI.Repositories
+namespace SneakerStoreAPI.Repositories
 {
 
     public class UsuarioRepository : IUsuarioRepository
@@ -36,20 +37,21 @@ namespace SneakerStoreLibAPI.Repositories
             }
         }     
 
-        public async Task<UsuarioContainer> GetUsuariosEContadorAsync()
-        {
-            using (var conn = _db.Connection)
-            {
-                string query = @"SELECT COUNT(*) FROM tbUsuario_teste
-                                 SELECT * FROM tbUsuario_teste";
-                var reader = await conn.QueryMultipleAsync(sql: query);
-                return new UsuarioContainer
-                {
-                    Contador = (await reader.ReadAsync<int>()).FirstOrDefault(),
-                    Usuarios = (await reader.ReadAsync<Usuario>()).ToList()
-                };
-            }
-        }
+        //Implementar**
+        //public async Task<UsuarioContainer> GetUsuariosEContadorAsync()
+        //{
+        //    using (var conn = _db.Connection)
+        //    {
+        //        string query = @"SELECT COUNT(*) FROM tbUsuario_teste
+        //                         SELECT * FROM tbUsuario_teste";
+        //        var reader = await conn.QueryMultipleAsync(sql: query);
+        //        return new UsuarioContainer
+        //        {
+        //            Contador = (await reader.ReadAsync<int>()).FirstOrDefault(),
+        //            Usuarios = (await reader.ReadAsync<Usuario>()).ToList()
+        //        };
+        //    }
+        //}
         public async Task<int> SaveAsync(Usuario novoUsuario)
         {
             using (var conn = _db.Connection)

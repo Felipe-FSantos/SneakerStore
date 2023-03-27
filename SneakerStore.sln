@@ -7,9 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{CF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackEnd", "BackEnd", "{AC9EA8DD-05AC-402E-91F5-382E38AFDE64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SneakerStorePage", "SneakerStorePage\SneakerStorePage.csproj", "{78809C84-B461-4467-8D17-6AA1B8B0717E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SneakerStorePage", "SneakerStorePage\SneakerStorePage.csproj", "{78809C84-B461-4467-8D17-6AA1B8B0717E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SneakerStoreLibAPI", "SneakerStoreLibAPI\SneakerStoreLibAPI.csproj", "{6610683D-213D-4420-97AE-8EFDBB3848C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SneakerStoreAPI", "SneakerStoreLibAPI\SneakerStoreAPI.csproj", "{6610683D-213D-4420-97AE-8EFDBB3848C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SneakerStoreLib", "SneakerStoreLib\SneakerStoreLib.csproj", "{7BB7E019-4C98-400D-AC45-EF861A475544}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{6610683D-213D-4420-97AE-8EFDBB3848C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6610683D-213D-4420-97AE-8EFDBB3848C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6610683D-213D-4420-97AE-8EFDBB3848C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BB7E019-4C98-400D-AC45-EF861A475544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BB7E019-4C98-400D-AC45-EF861A475544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BB7E019-4C98-400D-AC45-EF861A475544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BB7E019-4C98-400D-AC45-EF861A475544}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{78809C84-B461-4467-8D17-6AA1B8B0717E} = {CFDC8D4E-FE7A-4114-92DC-A9C429F8ABF6}
 		{6610683D-213D-4420-97AE-8EFDBB3848C9} = {AC9EA8DD-05AC-402E-91F5-382E38AFDE64}
+		{7BB7E019-4C98-400D-AC45-EF861A475544} = {AC9EA8DD-05AC-402E-91F5-382E38AFDE64}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7A3FEF11-C6B3-4C35-B89E-B749D5DAD567}
